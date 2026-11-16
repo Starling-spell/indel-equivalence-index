@@ -1,0 +1,84 @@
+{
+  "accession": "U00096.3",
+  "sequence_sha256": "a9da2375eb60db1e26b60971b918a17bfdb925f93244abb2c8393b27cf2206d5",
+  "cases": {
+    "insert-first": {
+      "submitted": {
+        "accession": "U00096.3",
+        "boundary": 27,
+        "kind": "insert",
+        "bases": "AT"
+      },
+      "window": {
+        "start": 0,
+        "stop": 91,
+        "sha256": "5ebeb90c1ac5254e66d98cdbe2adf3a8a70bd18887fa68b2b4f5650a482daed8"
+      },
+      "status": "COMPLETE",
+      "event_id": "a044e2d2cc01c17ea68943e4d621484f2a86e66a429100c6f930157d3dabbd52",
+      "event": {
+        "schema": "indel-equivalence/1",
+        "accession": "U00096.3",
+        "kind": "insert",
+        "left_boundary": 27,
+        "right_boundary": 31,
+        "left_bases": "AT",
+        "right_bases": "AT",
+        "reference_start": 26,
+        "reference_bases": "AATATG"
+      }
+    },
+    "insert-shifted": {
+      "submitted": {
+        "accession": "U00096.3",
+        "boundary": 28,
+        "kind": "insert",
+        "bases": "TA"
+      },
+      "window": {
+        "start": 0,
+        "stop": 92,
+        "sha256": "7de14e9c2b3c22aee5d9f2137f2f259b3fcae21edaf7f9d665128ec9f6e69b16"
+      },
+      "status": "COMPLETE",
+      "event_id": "a044e2d2cc01c17ea68943e4d621484f2a86e66a429100c6f930157d3dabbd52",
+      "event": {
+        "schema": "indel-equivalence/1",
+        "accession": "U00096.3",
+        "kind": "insert",
+        "left_boundary": 27,
+        "right_boundary": 31,
+        "left_bases": "AT",
+        "right_bases": "AT",
+        "reference_start": 26,
+        "reference_bases": "AATATG"
+      }
+    },
+    "delete-repeat": {
+      "submitted": {
+        "accession": "U00096.3",
+        "boundary": 47,
+        "kind": "delete",
+        "bases": "A"
+      },
+      "window": {
+        "start": 0,
+        "stop": 112,
+        "sha256": "9e16db9f8de59e280c12ca9026f7d257125b6276965970eff79be159858c0bb0"
+      },
+      "status": "COMPLETE",
+      "event_id": "f4c9ac1d20cc4e5a374d034f6d36ea83d4f80108081899fc18ca1f5fc643f521",
+      "event": {
+        "schema": "indel-equivalence/1",
+        "accession": "U00096.3",
+        "kind": "delete",
+        "left_boundary": 46,
+        "right_boundary": 52,
+        "left_bases": "A",
+        "right_bases": "A",
+        "reference_start": 45,
+        "reference_bases": "TAAAAAAAG"
+      }
+    }
+  }
+}
