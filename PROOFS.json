@@ -1,0 +1,248 @@
+{
+  "network": "StudioNet",
+  "source_commit": "6658e4cd48bd2c071a793fe8bbf501872b3e3b84",
+  "transactions": [
+    {
+      "step": "deploy",
+      "args": [
+        "deploy",
+        "--contract",
+        "contracts/IndelEquivalenceIndex.py"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1fb",
+      "hash": "0xc06acb331d8899ddd8b84fefabe1d8bdefcc612a3bcf696717e3175392321b39",
+      "receipt": {
+        "hash": "0xc06acb331d8899ddd8b84fefabe1d8bdefcc612a3bcf696717e3175392321b39",
+        "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "insert-first",
+      "args": [
+        "write",
+        "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "normalize",
+        "--args",
+        "U00096.3",
+        "27",
+        "insert",
+        "AT"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1fc",
+      "hash": "0x025e62e0385ec7d063a83fbf5293d19f423b250fff7bccb66cb4909f9e679103",
+      "receipt": {
+        "hash": "0x025e62e0385ec7d063a83fbf5293d19f423b250fff7bccb66cb4909f9e679103",
+        "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "insert-shifted",
+      "args": [
+        "write",
+        "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "normalize",
+        "--args",
+        "U00096.3",
+        "28",
+        "insert",
+        "TA"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1fd",
+      "hash": "0xad3c104ff5ab87013c250b58de6d52ba50d350e71d80444b987fd330533da139",
+      "receipt": {
+        "hash": "0xad3c104ff5ab87013c250b58de6d52ba50d350e71d80444b987fd330533da139",
+        "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "delete-repeat",
+      "args": [
+        "write",
+        "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "normalize",
+        "--args",
+        "U00096.3",
+        "47",
+        "delete",
+        "A"
+      ],
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "nonce": "0x1fe",
+      "hash": "0x23b686b17e11efdd5e4c73d58810e1f68eea79d0991e30f64d680197217b17c4",
+      "receipt": {
+        "hash": "0x23b686b17e11efdd5e4c73d58810e1f68eea79d0991e30f64d680197217b17c4",
+        "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    }
+  ],
+  "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+  "source": {
+    "address": "0x239e9acd065718A87B47Df725bC74fef3f605812",
+    "source_match": true,
+    "sha256": "a2b5e46f20a51052285435a317b5146e0aeb29530bce01bcbf6ba33bd5560bbc"
+  },
+  "calls": {
+    "insert-first": {
+      "report": {
+        "event": {
+          "accession": "U00096.3",
+          "kind": "insert",
+          "left_bases": "AT",
+          "left_boundary": 27,
+          "reference_bases": "AATATG",
+          "reference_start": 26,
+          "right_bases": "AT",
+          "right_boundary": 31,
+          "schema": "indel-equivalence/1"
+        },
+        "event_id": "a044e2d2cc01c17ea68943e4d621484f2a86e66a429100c6f930157d3dabbd52",
+        "status": "COMPLETE",
+        "submitted": {
+          "accession": "U00096.3",
+          "bases": "AT",
+          "boundary": 27,
+          "kind": "insert"
+        },
+        "window": {
+          "sha256": "5ebeb90c1ac5254e66d98cdbe2adf3a8a70bd18887fa68b2b4f5650a482daed8",
+          "start": 0,
+          "stop": 91
+        }
+      },
+      "event": {
+        "accession": "U00096.3",
+        "kind": "insert",
+        "left_bases": "AT",
+        "left_boundary": 27,
+        "reference_bases": "AATATG",
+        "reference_start": 26,
+        "right_bases": "AT",
+        "right_boundary": 31,
+        "schema": "indel-equivalence/1"
+      }
+    },
+    "insert-shifted": {
+      "report": {
+        "event": {
+          "accession": "U00096.3",
+          "kind": "insert",
+          "left_bases": "AT",
+          "left_boundary": 27,
+          "reference_bases": "AATATG",
+          "reference_start": 26,
+          "right_bases": "AT",
+          "right_boundary": 31,
+          "schema": "indel-equivalence/1"
+        },
+        "event_id": "a044e2d2cc01c17ea68943e4d621484f2a86e66a429100c6f930157d3dabbd52",
+        "status": "COMPLETE",
+        "submitted": {
+          "accession": "U00096.3",
+          "bases": "TA",
+          "boundary": 28,
+          "kind": "insert"
+        },
+        "window": {
+          "sha256": "7de14e9c2b3c22aee5d9f2137f2f259b3fcae21edaf7f9d665128ec9f6e69b16",
+          "start": 0,
+          "stop": 92
+        }
+      },
+      "event": {
+        "accession": "U00096.3",
+        "kind": "insert",
+        "left_bases": "AT",
+        "left_boundary": 27,
+        "reference_bases": "AATATG",
+        "reference_start": 26,
+        "right_bases": "AT",
+        "right_boundary": 31,
+        "schema": "indel-equivalence/1"
+      }
+    },
+    "delete-repeat": {
+      "report": {
+        "event": {
+          "accession": "U00096.3",
+          "kind": "delete",
+          "left_bases": "A",
+          "left_boundary": 46,
+          "reference_bases": "TAAAAAAAG",
+          "reference_start": 45,
+          "right_bases": "A",
+          "right_boundary": 52,
+          "schema": "indel-equivalence/1"
+        },
+        "event_id": "f4c9ac1d20cc4e5a374d034f6d36ea83d4f80108081899fc18ca1f5fc643f521",
+        "status": "COMPLETE",
+        "submitted": {
+          "accession": "U00096.3",
+          "bases": "A",
+          "boundary": 47,
+          "kind": "delete"
+        },
+        "window": {
+          "sha256": "9e16db9f8de59e280c12ca9026f7d257125b6276965970eff79be159858c0bb0",
+          "start": 0,
+          "stop": 112
+        }
+      },
+      "event": {
+        "accession": "U00096.3",
+        "kind": "delete",
+        "left_bases": "A",
+        "left_boundary": 46,
+        "reference_bases": "TAAAAAAAG",
+        "reference_start": 45,
+        "right_bases": "A",
+        "right_boundary": 52,
+        "schema": "indel-equivalence/1"
+      }
+    }
+  },
+  "unknown_event_reverted": true,
+  "verified": true
+}

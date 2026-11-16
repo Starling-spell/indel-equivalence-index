@@ -56,15 +56,17 @@ async function transaction(step, args, signer, expected = 'SUCCESS', message) {
   } else if (!entry.hash && !verifyOnly && resumeUnbroadcast) {
     assert.deepEqual(entry.args, args);
     assert.equal(entry.signer, signer.address);
-    const [latest, pending, history] = await Promise.all([
+    const [latest, pending] = await Promise.all([
       rpc('eth_getTransactionCount', [signer.address, 'latest']),
       rpc('eth_getTransactionCount', [signer.address, 'pending']),
-      rpc('sim_getTransactionsForAddress', [proof.address]),
     ]);
     assert.equal(latest, entry.nonce, 'Recorded nonce was already used');
     assert.equal(pending, entry.nonce, 'Recorded nonce already has a pending write');
-    assert(!history.some(t => t.from_address?.toLowerCase() === signer.address.toLowerCase()
-      && BigInt(t.nonce) === BigInt(entry.nonce)), 'Recorded transaction already exists');
+    if (proof.address) {
+      const history = await rpc('sim_getTransactionsForAddress', [proof.address]);
+      assert(!history.some(t => t.from_address?.toLowerCase() === signer.address.toLowerCase()
+        && BigInt(t.nonce) === BigInt(entry.nonce)), 'Recorded transaction already exists');
+    }
     await send(args, signer, entry);
   }
   assert.deepEqual(entry.args, args);

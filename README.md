@@ -6,6 +6,8 @@ descriptions one on-chain event ID. It stores the leftmost representation,
 the other end of the equivalence interval, and the actual flanking bases
 that delimit it.
 
+[StudioNet proof matrix](LIVE_PROOFS.md) · [Submission text](SUBMISSION.md)
+
 `normalize(accession, boundary, kind, bases)` accepts a versioned INSDC
 accession, a zero-based boundary between bases, and a pure insertion or
 deletion of 1–32 ACGT bases. For a deletion, the submitted sequence must match
